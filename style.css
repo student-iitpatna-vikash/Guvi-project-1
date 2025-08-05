@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+    gap: 40px;
+}
+
+
+.calculator {
+    background: #fff;
+    padding: 20px 30px 30px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 340px;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 2em;
+    margin-top: 18px;
+    margin-bottom: 0;
+    text-align: right;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: #f9f9f9;
+    box-sizing: border-box;
+}
+
+
+
+.buttons-vertical {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(4, 50px);
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    justify-items: center;
+    align-items: center;
+}
+
+.buttons-vertical button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background: #e0e0e0;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.buttons-vertical button:hover {
+    background: #bdbdbd;
+}
+
+.buttons-operators {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.buttons-operators button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background: #f5b041;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.buttons-operators button:hover {
+    background: #d68910;
+}
+
+button {
+    height: 40px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background: #e0e0e0;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #bdbdbd;
+}
+
+.history {
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    margin-top: 0;
+    height: fit-content;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#history-list li {
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+    font-size: 1em;
+}
